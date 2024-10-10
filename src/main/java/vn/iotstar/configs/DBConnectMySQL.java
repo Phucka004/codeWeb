@@ -3,6 +3,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import vn.iotstar.dao.IUserDao;
+import vn.iotstar.dao.impl.UserDaoImpl;
+
 public class DBConnectMySQL {
 	private static String USERNAME = "root";
 	   private static String PASSWORD = "010804";
@@ -24,7 +27,8 @@ public class DBConnectMySQL {
 	   public static void main(String[] args) {
 		   try {
 			   new DBConnectMySQL();
-			   System.out.println(DBConnectMySQL.getDatabaseConnection());
+			   IUserDao userDao = new UserDaoImpl();
+			   System.out.println(userDao.findByUserName("phucka"));
 		   }
 		   catch (Exception e) {
 			   e.printStackTrace();
