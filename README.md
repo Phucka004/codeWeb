@@ -5,9 +5,11 @@ Họ và tên: Ka Phúc
 MSSV: 22110398
 
 Bài 1: Bài tập 16/9/2024
+
 Hoàn thiện Login, Register, forgot Password không gửi mail, logout
 
 Bài 2: Nhánh Bai2_CRUD bài tập 7/10/2024
+
 Thực hiện chức năng CRUD cho bảng Category và Video bằng Servlet + JPA
 
 Bài 3: Nhánh main Thymeleaf: Bài tập 28/10/2024
